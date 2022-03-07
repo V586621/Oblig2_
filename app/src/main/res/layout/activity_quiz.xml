@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".main.activities.QuizActivity"
+    android:background="@color/lightgray">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Answer the name of the person in the picture, click reset button when done to start new"
+        android:textColor="#B71C1C"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="21dp" />
+
+
+    <TextView
+        android:id="@+id/textViewScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/purple_500"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="21dp" />
+
+    <TextView
+        android:id="@+id/textViewCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/purple_500"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="21dp" />
+
+
+    <ImageView
+        android:id="@+id/imageGuess"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/guessText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="6"
+            android:inputType="text"
+            android:minHeight="48dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+    <Button
+        android:id="@+id/guessButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/guessText"
+        android:layout_toEndOf="@+id/guessText"
+        android:text="Guess Person"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@color/white"
+        />
+
+
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="resetQuiz"
+        android:text="Reset Quiz"
+        android:layout_marginVertical="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guessButton" />
+
+    <Button
+        android:id="@+id/buttonMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:layout_marginStart="20dp"
+        android:onClick="goMenu"
+        android:text="Meny" />
+
+    </TableRow>
+
+
+
+
+
+
+
+
+</LinearLayout>
+

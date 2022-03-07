@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Oblig2</string>
+
+    <string name="add_string">Add</string>
+    <string name="student_name">Student Name</string>
+    <string name="not_assigned">Not assigned</string>
+    <string name="student_id">Student ID</string>
+    <string name="product_quantity">Product Quantity</string>
+    <string name="find_string">Find</string>
+    <string name="delete_string">Delete</string>
+</resources>
